@@ -40,8 +40,8 @@ public class SpringAuthServiceApplication {
 	@Bean
 	CommandLineRunner clr(AccountRepository accountRepository){
 		return args -> {
-			Stream.of("aju, password1", "name2, password2", "name3, password3", "name4, password4")
-			.map(tpl -> tpl.split(",") )
+			Stream.of("name1,password1", "name2,password2", "name3,password3", "name4,password4")
+			.map(tpl -> tpl.split(",") ) 
 			.forEach(tpl -> accountRepository.save(new Account(tpl[0], tpl[1], true)));
 		};
 		
