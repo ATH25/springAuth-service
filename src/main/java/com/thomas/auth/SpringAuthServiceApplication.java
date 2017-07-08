@@ -68,7 +68,7 @@ class AuthServiceConfiguration extends AuthorizationServerConfigurerAdapter{
 		clients
 		.inMemory()
 		.withClient("html5")
-		.secret("password")
+		.secret("secret")
 		.authorizedGrantTypes("password")
 		.scopes("openid");
 
