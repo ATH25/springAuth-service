@@ -85,7 +85,7 @@ class AuthServiceConfiguration extends AuthorizationServerConfigurerAdapter{
 
 
 @Service
-class AccountUserDetailService implements UserDetailsService{
+class AccountUserDetailService implements UserDetailsService{  
 	
 	private final AccountRepository accountRepository;
 	
